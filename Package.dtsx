@@ -1,0 +1,1031 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/1/2025 8:28:19 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="VIAWSE02LC0222"
+  DTS:CreatorName="DUOCACAD\vina"
+  DTS:DTSID="{A8E81899-9C87-4A0D-A3FB-A1C2A11E953B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.521.0"
+  DTS:LocaleID="13322"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{0ACC2F7D-1E36-4AE2-952C-D97934154B26}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.Americans]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F4B42CE6-9E33-4A15-9251-7A139012D352}"
+      DTS:ObjectName="LocalHost.Americans">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Americans;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.Americans 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{948EE01F-E88E-43E3-9D95-6C4A4017797E}"
+      DTS:ObjectName="LocalHost.Americans 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Americans;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.Americans 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{398BE810-8FE6-4827-8DC8-74F613F29560}"
+      DTS:ObjectName="LocalHost.Americans 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Americans;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.Americans 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{ECE835EB-80A9-4F8A-A370-B35B36B52D61}"
+      DTS:ObjectName="LocalHost.Americans 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Americans;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.Americans 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A946CCA0-FFB4-4374-9E1C-748E50B45003}"
+      DTS:ObjectName="LocalHost.Americans 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Americans;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.DWAmericans]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D45AA7CB-0DAD-49D5-9072-E4AB80FC5614}"
+      DTS:ObjectName="LocalHost.DWAmericans">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=DWAmericans;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.DWAmericans 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D515AAED-E022-4742-AC09-80410B32677F}"
+      DTS:ObjectName="LocalHost.DWAmericans 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=DWAmericans;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.DWAmericans1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{2862E8E2-305D-4669-84A2-D8E933DCA8E0}"
+      DTS:ObjectName="LocalHost.DWAmericans1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=.;Initial Catalog=DWAmericans;Integrated Security=True;Application Name=SSIS-Package-{2862E8E2-305D-4669-84A2-D8E933DCA8E0}LocalHost.DWAmericans1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[schema.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{2B813E8C-E277-44AE-BDBF-205A748CF4FE}"
+      DTS:ObjectName="schema.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\vina\Downloads\schema.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[schema.sql 1]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{D9877B42-2937-4B7F-B419-1E3F6FBCBDCF}"
+      DTS:ObjectName="schema.sql 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\vina\Downloads\schema.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[schema.sql 2]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{E359B0B2-4E5F-4A61-AFA6-4ECF0BE13DEE}"
+      DTS:ObjectName="schema.sql 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\vina\Downloads\schema.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[{08AE8468-CBBD-46C2-BA21-C1ED7D8659F4\}]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{08AE8468-CBBD-46C2-BA21-C1ED7D8659F4}"
+      DTS:ObjectName="{08AE8468-CBBD-46C2-BA21-C1ED7D8659F4}">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[{E7729D80-28E5-4F75-9002-7FEA44DC567C\}]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E7729D80-28E5-4F75-9002-7FEA44DC567C}"
+      DTS:ObjectName="{E7729D80-28E5-4F75-9002-7FEA44DC567C}">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Cargar DIM Canal"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{0EB69988-950D-4EBE-A1CD-F432DB76921D}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Cargar DIM Canal"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Cargar DIM Canal\Agregar columnas de Fecha"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Agregar columnas de Fecha"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Inputs[Derived Column Input].Columns[Canal_Id]"
+                      cachedDataType="i4"
+                      cachedName="Canal_Id"
+                      lineageId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output].Columns[Canal_Id]" />
+                    <inputColumn
+                      refId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Inputs[Derived Column Input].Columns[Canal]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="Canal"
+                      lineageId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output].Columns[Canal]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output].Columns[fecha_ini]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output].Columns[fecha_ini]"
+                      name="fecha_ini"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output].Columns[fecha_fin]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output].Columns[fecha_fin]"
+                      name="fecha_fin"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output].Columns[cod_canal]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output].Columns[cod_canal]"
+                      name="cod_canal"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output].Columns[Canal_Id]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">Canal_Id</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output].Columns[nom_canal]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="20"
+                      lineageId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output].Columns[nom_canal]"
+                      name="nom_canal"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output].Columns[Canal]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">Canal</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Cargar DIM Canal\Cargar en DIMCanal"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Cargar en DIMCanal"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."DIMCanal"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.DWAmericans1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.DWAmericans1]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET].Columns[fecha_ini]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="fecha_ini"
+                      externalMetadataColumnId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha_ini]"
+                      lineageId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output].Columns[fecha_ini]" />
+                    <inputColumn
+                      refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET].Columns[fecha_fin]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="fecha_fin"
+                      externalMetadataColumnId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha_fin]"
+                      lineageId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output].Columns[fecha_fin]" />
+                    <inputColumn
+                      refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET].Columns[cod_canal]"
+                      cachedDataType="i4"
+                      cachedName="cod_canal"
+                      externalMetadataColumnId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET].ExternalColumns[cod_canal]"
+                      lineageId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output].Columns[cod_canal]" />
+                    <inputColumn
+                      refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET].Columns[nom_canal]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="nom_canal"
+                      externalMetadataColumnId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET].ExternalColumns[nom_canal]"
+                      lineageId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output].Columns[nom_canal]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET].ExternalColumns[canalkey]"
+                      dataType="i4"
+                      name="canalkey" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET].ExternalColumns[cod_canal]"
+                      dataType="i4"
+                      name="cod_canal" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET].ExternalColumns[nom_canal]"
+                      dataType="wstr"
+                      length="20"
+                      name="nom_canal" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha_ini]"
+                      dataType="dbTimeStamp"
+                      name="fecha_ini" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha_fin]"
+                      dataType="dbTimeStamp"
+                      name="fecha_fin" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Cargar DIM Canal\Cargar en DIMCanal.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Cargar en DIMCanal.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Cargar DIM Canal\Cargar en DIMCanal.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Cargar DIM Canal\Leer Canal"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Leer Canal"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[CANAL]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Cargar DIM Canal\Leer Canal.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.Americans]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Americans]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output].Columns[Canal_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output].ExternalColumns[Canal_Id]"
+                      lineageId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output].Columns[Canal_Id]"
+                      name="Canal_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output].Columns[Canal]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output].ExternalColumns[Canal]"
+                      length="20"
+                      lineageId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output].Columns[Canal]"
+                      name="Canal"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output].ExternalColumns[Canal_Id]"
+                      dataType="i4"
+                      name="Canal_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output].ExternalColumns[Canal]"
+                      dataType="wstr"
+                      length="20"
+                      name="Canal" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Error Output].Columns[Canal_Id]"
+                      dataType="i4"
+                      lineageId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Error Output].Columns[Canal_Id]"
+                      name="Canal_Id" />
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Error Output].Columns[Canal]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Error Output].Columns[Canal]"
+                      name="Canal" />
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Cargar DIM Canal.Paths[Derived Column Output]"
+              endId="Package\Cargar DIM Canal\Cargar en DIMCanal.Inputs[Entrada de destino de ADO NET]"
+              name="Derived Column Output"
+              startId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Cargar DIM Canal.Paths[OLE DB Source Output]"
+              endId="Package\Cargar DIM Canal\Agregar columnas de Fecha.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\Cargar DIM Canal\Leer Canal.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Cargar DIM Clientes"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{eca4c909-4ce1-465d-8636-01092bbb5994}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Cargar DIM Clientes"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Cargar DIM Productos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{2d872961-5186-48cc-91f1-00aa12f39334}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Cargar DIM Productos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Cargar DIM Tiempo"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{5858dddc-90ce-4936-a3cc-70ce21556690}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Cargar DIM Tiempo"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Cargar DIM Vendedores"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{150fb4b1-6519-4ebd-83d4-86bff2bb564a}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Cargar DIM Vendedores"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Cargar Tabla Hechos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{7c076374-c3c9-412b-9b9c-b7d420f80a63}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Cargar Tabla Hechos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Limpiar DW"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DTSID="{029851D3-1800-43BE-98F4-8052D5DA37C0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Limpiar DW"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022 CTP2.0; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D45AA7CB-0DAD-49D5-9072-E4AB80FC5614}"
+          SQLTask:SqlStatementSource="USE MASTER&#xA;GO&#xA;&#xA;/* ELIMINA BASE DWAMERICANS, SI EXISTE */&#xA;ALTER DATABASE DWAmericans SET SINGLE_USER WITH ROLLBACK IMMEDIATE&#xA;   DROP DATABASE DWAmericans;&#xA;GO&#xA;&#xA;/* CREACION DE LA BASE DE DATOS DEL DATAWAREHOUSE &#xA;                                                &#xA;   considera 5 Dimensiones : Articulos, Clientes, Vendedores, Canal y TIEMPO &#xA;             1 Tabla de Hechos : VENTAS                                      &#xA;*/&#xA;create database DWAmericans;&#xA;go&#xA;&#xA;use DWAmericans&#xA;go&#xA;&#xA;/* Creación Tabla DIMENSION PRODUCTOS */&#xA;CREATE TABLE DIMProductos (&#xA;    productokey&#x9;&#x9;INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED,&#xA;    cod_producto&#x9;nvarchar(255) not null,&#xA;    nom_producto&#x9;nvarchar(255) not null,&#xA;    familia&#x9;&#x9;&#x9;nvarchar(255) not null,&#xA;&#x9;fecha_ini&#x9;&#x9;date not null ,&#xA;&#x9;fecha_fin&#x9;&#x9;date not null&#xA;);&#xA;&#xA;/* Creación Tabla DIMENSION CANAL */&#xA;CREATE TABLE DIMCanal (&#xA;    canalkey&#x9;&#x9;INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED,&#xA;&#x9;cod_canal&#x9;&#x9;int not null,&#xA;    nom_canal&#x9;&#x9;nchar(20) not null,&#xA;&#x9;fecha_ini&#x9;&#x9;date not null,&#xA;&#x9;fecha_fin&#x9;&#x9;date not null&#xA;);&#xA;&#xA;/* Creación Tabla DIMENSION CLIENTES */&#xA;CREATE TABLE DIMClientes (&#xA;    clientekey&#x9;&#x9;INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED,&#xA;    cod_cliente&#x9;&#x9;nvarchar(255) not null,&#xA;&#x9;num_cliente&#x9;&#x9;smallint not null,&#xA;&#x9;nom_cliente&#x9;&#x9;nvarchar(255) not null,&#xA;&#x9;edad&#x9;&#x9;&#x9;smallint not null,&#xA;&#x9;estado_civil&#x9;nvarchar(255) not null,&#xA;&#x9;residencia&#x9;&#x9;nvarchar(255) not null,&#xA;&#x9;origen&#x9;&#x9;&#x9;nvarchar(255) not null,&#xA;&#x9;fecha_ini&#x9;&#x9;date not null ,&#xA;&#x9;fecha_fin&#x9;&#x9;date not null&#xA;);&#xA;&#xA;/* Creación Tabla DIMENSION VENDEDORES */&#xA;CREATE TABLE DIMVendedores (&#xA;    vendedorkey&#x9;&#x9;INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED,&#xA;&#x9;cod_vendedor&#x9;smallint not null,&#xA;  &#x9;nom_vendedor&#x9;nvarchar(255) not null,&#xA;&#x9;sucursal&#x9;&#x9;nvarchar(255) not null ,&#xA;&#x9;comuna&#x9;&#x9;&#x9;nvarchar(255) not null,&#xA;&#x9;provincia&#x9;&#x9;nvarchar(255) not null,&#xA;&#x9;region&#x9;&#x9;&#x9;nvarchar(255) not null,&#xA;&#x9;fecha_ini&#x9;&#x9;date not null ,&#xA;&#x9;fecha_fin&#x9;&#x9;date not null&#xA;);&#xA;&#xA;/* Creación Tabla DIMENSION TIEMPO  */&#xA;CREATE TABLE DIMTiempo (&#xA;    fechakey&#x9;&#x9;INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED,&#xA;    fecha&#x9;&#x9;&#x9;date not null,&#xA;&#x9;fechaAAAAMMDD&#x9;INT  not null,&#xA;&#x9;año&#x9;&#x9;&#x9;&#x9;smallint not null,&#xA;&#x9;semestre&#x9;&#x9;smallint not null,&#xA;&#x9;trimestre&#x9;&#x9;smallint not null,&#xA;&#x9;mes&#x9;&#x9;&#x9;&#x9;smallint not null,&#xA;&#x9;semana&#x9;&#x9;&#x9;smallint not null,&#xA;&#x9;dia&#x9;&#x9;&#x9;&#x9;smallint not null,&#xA;&#x9;diasemana&#x9;&#x9;smallint not null,&#xA;&#x9;nsemestre&#x9;&#x9;varchar(15) not null,&#xA;&#x9;ntrimestre&#x9;&#x9;varchar(15) not null,&#xA;&#x9;nmes&#x9;&#x9;&#x9;varchar(15) not null,&#xA;&#x9;nmes3L&#x9;&#x9;&#x9;varchar(15) not null,&#xA;&#x9;ndiasemana&#x9;&#x9;varchar(15) not null,&#xA;    ndiasemana3L&#x9;varchar(15)  not null&#xA;);&#xA;&#xA;/* Creación Tabla HECHOS VENTAS  */&#xA;CREATE TABLE HECHOSVentas (&#xA;    fechakey&#x9;&#x9;&#x9;&#x9;INT not null,&#xA;&#x9;productokey&#x9;&#x9;&#x9;&#x9;INT not null,&#xA;    canalkey&#x9;&#x9;&#x9;&#x9;INT not null,&#xA;    clientekey&#x9;&#x9;&#x9;&#x9;INT not null,&#xA;    vendedorkey&#x9;&#x9;&#x9;&#x9;INT not null,&#xA;    total_neto_detalle&#x9;&#x9;INT not null,&#x9;&#x9;&#x9;/* TOTAL */&#xA;    total_impuesto_detalle&#x9;INT not null,&#x9;&#x9;&#x9;/* TOTAL * 19% */&#xA;    total_bruto_detalle&#x9;&#x9;INT not null,           /* TOTAL * 1,19 */ &#xA;&#x9;total_costo&#x9;&#x9;&#x9;&#x9;INT not null,           /* COSTO_UNITARIO * CANTIDAD */&#xA;&#x9;total_utilidad&#x9;&#x9;&#x9;INT not null,           /* ( PRECIO_UNITARIO - COSTO_UNITARIO ) * CANTIDAD */&#xA;&#x9;total_cantidad&#x9;&#x9;&#x9;INT not null&#x9;&#x9;&#x9;/* CANTIDAD */&#xA;);&#xA;&#xA;&#xA;-- DEFINICION DE RELACIONES ENTRE DIMENSIONES Y HECHOS&#xA;---------------------------------------------------------------------&#xA;ALTER TABLE HECHOSVentas&#xA;ADD FOREIGN KEY (productokey)&#x9;REFERENCES DIMProductos(productokey);&#xA;&#xA;ALTER TABLE HECHOSVentas&#xA;ADD FOREIGN KEY (fechakey)&#x9;&#x9;REFERENCES DIMTiempo(fechakey);&#xA;&#xA;ALTER TABLE HECHOSVentas&#xA;ADD FOREIGN KEY (canalkey)&#x9;&#x9;REFERENCES DIMCanal(canalkey);&#xA;&#xA;ALTER TABLE HECHOSVentas&#xA;ADD FOREIGN KEY (clientekey)&#x9;REFERENCES DIMclientes(clientekey);&#xA;&#xA;ALTER TABLE HECHOSVentas&#xA;ADD FOREIGN KEY (vendedorkey)&#x9;REFERENCES DIMVendedores(vendedorkey);&#xA;go&#xA;&#xA;-- CREACION DE INDICES DE LAS TABLAS &#xA;----------------------------------------------------&#xA;&#xA;CREATE CLUSTERED&#x9;INDEX I_DIMProductos_nombre ON DIMProductos (nom_producto);&#xA;&#xA;CREATE CLUSTERED&#x9;INDEX I_DIMClientes_nombre ON DIMClientes (nom_cliente);&#xA;&#xA;CREATE CLUSTERED&#x9;INDEX I_DIMVendedores_nombre ON DIMvendedores (nom_vendedor);&#xA;&#xA;CREATE CLUSTERED&#x9;INDEX I_DIMCanal_nombre ON DIMCanal (nom_canal);&#xA;&#xA;CREATE CLUSTERED&#x9;INDEX I_DIMTiempo_fecha ON DIMtiempo (fecha);&#xA;&#xA;go&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{20F3DE75-0813-4229-80C9-F16E4EE17E49}"
+      DTS:From="Package\Limpiar DW"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Cargar DIM Canal" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{1F7A5156-1422-4F3F-A7DC-55C884E795B0}"
+      DTS:From="Package\Cargar DIM Canal"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Cargar DIM Clientes" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{C8D45CB1-6B1F-415C-BA2D-58080DD276E0}"
+      DTS:From="Package\Cargar DIM Clientes"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Cargar DIM Productos" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{3B19DC75-293C-4634-B3EE-66BBD38894C9}"
+      DTS:From="Package\Cargar DIM Productos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Cargar DIM Vendedores" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{F9F63D43-5DE3-4F93-917C-B3DAA46919FC}"
+      DTS:From="Package\Cargar DIM Vendedores"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Cargar DIM Tiempo" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{CF3B3019-A6E1-43FC-80B5-32E67F371116}"
+      DTS:From="Package\Cargar DIM Tiempo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Cargar Tabla Hechos" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="162,42"
+          Id="Package\Cargar DIM Canal"
+          TopLeft="447,210" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Cargar DIM Clientes"
+          TopLeft="450,307" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Cargar DIM Productos"
+          TopLeft="447,413" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Cargar DIM Tiempo"
+          TopLeft="447,617" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\Cargar DIM Vendedores"
+          TopLeft="447,515" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Cargar Tabla Hechos"
+          TopLeft="447,717" />
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Limpiar DW"
+          TopLeft="454,125" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="524.5,167">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="528,252">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.5,55"
+              Start="0,0"
+              End="8.5,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5"
+                    Point2="0,27.5"
+                    Point3="4,27.5" />
+                  <mssgle:LineSegment
+                    End="4.5,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.5,27.5"
+                    Point2="8.5,27.5"
+                    Point3="8.5,31.5" />
+                  <mssgle:LineSegment
+                    End="8.5,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="537.5,349">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64"
+              Start="0,0"
+              End="0,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="540.75,455">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="543,557">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10.5,60"
+              Start="0,0"
+              End="-10.5,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="-4,30" />
+                  <mssgle:LineSegment
+                    End="-6.5,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6.5,30"
+                    Point2="-10.5,30"
+                    Point3="-10.5,34" />
+                  <mssgle:LineSegment
+                    End="-10.5,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="534,659">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58"
+              Start="0,0"
+              End="0,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Cargar DIM Canal">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="129,42"
+          Id="Package\Cargar DIM Canal\Leer Canal"
+          TopLeft="512,114" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Cargar DIM Canal\Cargar en DIMCanal"
+          TopLeft="486,292" />
+        <NodeLayout
+          Size="210,42"
+          Id="Package\Cargar DIM Canal\Agregar columnas de Fecha"
+          TopLeft="464,198" />
+        <EdgeLayout
+          Id="Package\Cargar DIM Canal.Paths[OLE DB Source Output]"
+          TopLeft="572.75,156">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargar DIM Canal.Paths[Derived Column Output]"
+          TopLeft="571,240">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52"
+              Start="0,0"
+              End="0,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Cargar DIM Canal\Leer Canal">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Cargar DIM Canal\Cargar en DIMCanal">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
